@@ -2,7 +2,7 @@
 
 :root {
     --color-background: #F5F5F5;
-    --color-primary: #D29062;
+    --color-primary: #208894;
     --color-text: black;
     --color-white: white;
     --color-dark: #333;
@@ -28,17 +28,7 @@
     overflow: hidden;
 }
 
-.profile-left {
-    background: linear-gradient(to bottom right, #D29062, #D8CEC4);
-    color: var(--color-white);
-    padding: 30px;
-    width: 40%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-}
+
 
 .profile-info h2 {
     margin: 0;
@@ -54,7 +44,7 @@
 
 .profile-right {
     padding: 30px;
-    width: 60%;
+    width: 100%;
     background: var(--color-background);
     border-radius: 0 10px 10px 0;
 }
@@ -89,7 +79,7 @@ h1 {
 .profile-form .form-group-grid {
     display: flex;
     justify-content: space-between;
-    gap: 10px;
+    gap: 50px;
 }
 
 .profile-form .form-group-grid .form-group {
@@ -110,7 +100,7 @@ h1 {
 }
 
 .profile-btn:hover {
-    background-color: #B87348;
+    background-color: #208894;
 }
 
 @media (max-width: 768px) {

@@ -63,15 +63,12 @@ const Profile = () => {
         <>
             <div className="profile-container">
                 <div className="profile-card">
-                    <div className="profile-left">
-                        <div className="profile-info">
-                            <h2>{fullname}</h2>
-                            <p>{email}</p>
-                        </div>
-                    </div>
+                    
                     <div className="profile-right">
                         <h1>User Details</h1>
                         <form className="profile-form" onSubmit={handleUpdate}>
+                            
+                            <div className="form-group-grid">
                             <div className="form-group">
                                 <label htmlFor="fullName">Full Name</label>
                                 <input
@@ -83,7 +80,6 @@ const Profile = () => {
                                     placeholder="Enter your full name"
                                 />
                             </div>
-                            <div className="form-group-grid">
                                 <div className="form-group">
                                     <label htmlFor="username">Username</label>
                                     <input
@@ -106,6 +102,9 @@ const Profile = () => {
                                         placeholder="Enter your age"
                                     />
                                 </div>
+                            </div>
+                            <div>
+                                
                             </div>
                             <div className="form-group">
                                 <label htmlFor="email">Email</label>
