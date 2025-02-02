@@ -88,7 +88,7 @@
 }
 
 .add-to-cart-button {
-    background-color: #f97316;
+    background-color:#208894;
     color: white;
     padding: 0.5rem 1rem;
     border-radius: 0.5rem;
@@ -97,7 +97,7 @@
 }
 
 .add-to-cart-button:hover {
-    background-color: #ea580c;
+    background-color: #208894;
 }
 
 @media (min-width: 768px) {
