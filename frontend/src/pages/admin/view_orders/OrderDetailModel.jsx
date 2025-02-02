@@ -21,11 +21,11 @@ const OrderDetailsModal = ({ show, onHide, order, productsCache }) => {
         content: {
             backgroundColor: '#FFFFFF', // White background
             borderRadius: '10px',
-            border: '1px solid #D29062', // Warm Brown border
+            border: '1px solid #208894', // Warm Brown border
         },
         header: {
             backgroundColor: '#D8CEC4', // Light Beige
-            borderBottom: '1px solid #D29062', // Warm Brown
+            borderBottom: '1px solid #208894', // Warm Brown
         },
         title: {
             color: '#000000', // Black
