@@ -49,20 +49,14 @@ const Navbar = () => {
                 <nav className="navbar navbar-expand-lg navbar-light" style={{ backgroundColor: '#208894' }}>
                     <div className="container-fluid">
                         <Link className="navbar-brand d-flex align-items-center ms-2" to="/">
-                            <img src="/assets/images/gear_rentals_logo.png" alt="Logo" width="40" height="40" className="d-inline-block align-text-top" />
-                            <span className="ms-2 ml-1" style={{color:'white'}}>Gear Rentals</span>
+                            <img src="/assets/images/hikeventure_logo.png" alt="Logo" width="40" height="40" className="d-inline-block align-text-top" />
+                            <span className="ms-2 ml-1" style={{color:'white'}}>Hike Venture</span>
                         </Link>
                         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                             <span className="navbar-toggler-icon"></span>
                         </button>
                         <div className="collapse navbar-collapse" id="navbarNav">
-                            <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-                                <li className="nav-item ms-5">
-                                    <ScrollLink className="nav-link" to="footer" style={{ cursor: 'pointer', color: 'white'}} smooth={true} duration={1000}>
-                                        About Us
-                                    </ScrollLink>
-                                </li>
-                            </ul>
+                           
                             <form className="d-flex mx-auto w-25 position-relative" role="search">
                                 <input onSearch={handleSearch} type="text" className="form-control me-2" placeholder="Search" aria-label="Search" />
                                 <FaSearch className="position-absolute top-50 end-0 translate-middle-y me-3" style={{ color: '#208894' }} />
