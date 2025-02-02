@@ -103,7 +103,7 @@ const Dashboard = () => {
         <>
             <div className='dashboard'>
                 <Banner />
-                <div className='categories-container mt-3'>
+                <div className='categories-container mt-5'>
                     {/* <h2 className='title'>Explore Categories</h2> */}
                     <div className='categories'>
                         {categories.map((category, index) => (
