@@ -9,7 +9,7 @@ const Banner = () => {
     const images = [
         "/assets/images/trek1.jpg",
         "/assets/images/trek2.jpg",
-        "/assets/images/trek3.jpg",
+        "/assets/images/trek3.avif",
     ];
 
     useEffect(() => {
