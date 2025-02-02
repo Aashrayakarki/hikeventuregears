@@ -135,14 +135,14 @@ input[type="text"] {
 }
 
 .login-options a {
-    color: #D29062;
+    color: #208894;
     text-decoration: none;
 }
 
 .login-button {
     width: 100%;
     padding: 12px;
-    background-color: #D29062;
+    background-color: #208894;
     color: #fff;
     border: none;
     border-radius: 6px;
@@ -153,7 +153,7 @@ input[type="text"] {
 }
 
 .login-button:hover {
-    background-color: #b2704f;
+    background-color: #208894;
 }
 
 .terms {
@@ -162,7 +162,7 @@ input[type="text"] {
 }
 
 .terms a {
-    color: #D29062;
+    color: #208894;
     text-decoration: none;
     font-weight: bold;
 }
@@ -198,7 +198,7 @@ input[type="text"] {
 .otp-button {
     width: 100%;
     padding: 10px;
-    background: #D29062;
+    background: #208894;
     color: white;
     border: none;
     border-radius: 5px;
@@ -208,7 +208,7 @@ input[type="text"] {
 }
 
 .otp-button:hover {
-    background: #b2704f;
+    background: #208894;
 }
 
 @media (max-width: 768px) {
