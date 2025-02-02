@@ -1,5 +1,5 @@
 {
-  "name": "tipsy_frontend_web",
+  "name": "hikeventure_frontend",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -39,7 +39,7 @@
     "sanitize-html": "^2.14.0",
     "styled-components": "^6.1.14",
     "sweetalert2": "^11.12.4",
-    "tipsy_frontend_web": "file:",
+    "hikeventure_frontend": "file:",
     "toast": "^0.5.4",
     "web-vitals": "^2.1.4"
   },
