@@ -132,19 +132,19 @@ const Login = () => {
     // Image carousel logic
     const images = [
         {
-            src: "assets/images/s1.jpg",
-            heading: "Choose Your Favorite Drink",
-            text: "Find your preferred beverage anytime, anywhere with ease ",
+            src: "assets/images/trek2.jpg",
+            heading: "The perfect place to find your trekking gear",
+            text: "Find your preferred trekking products anytime, anywhere with ease ",
         },
         {
-            src: "assets/images/s2.jpg",
-            heading: "Grab a Drink to Refresh Yourself",
-            text: "Whether it's a long day after work or game night, we’re always here to refresh you",
+            src: "assets/images/trek2.jpg",
+            heading: "The perfect place to find your trekking gear",
+            text: "Find your preferred trekking products anytime, anywhere with ease ",
         },
         {
-            src: "assets/images/s3.jpg",
-            heading: "Fastest Delivery Experience Ever",
-            text: "Because Chilled drinks always taste better",
+            src: "assets/images/trek2.jpg",
+            heading: "The perfect place to find your trekking gear",
+            text: "Find your preferred trekking products anytime, anywhere with ease ",
         },
     ];
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -181,7 +181,7 @@ const Login = () => {
                         <div className="login-right">
                             <div className="login-form">
                                 <div className="logo">
-                                    <img src="assets/icon/ticon.png" alt="logo" />
+                                    <img src="assets/images/gear_rentals_logo.png" alt="logo" />
                                 </div>
                                 <h2>Welcome Back!</h2>
                                 <p>Please enter your details</p>
@@ -227,7 +227,7 @@ const Login = () => {
                                 </p>
                                 <p>
                                     Don't have an account?{" "}
-                                    <a style={{ color: "#D29062" }} href="/register">
+                                    <a style={{ color: "#208894" }} href="/register">
                                         Sign Up
                                     </a>
                                 </p>
