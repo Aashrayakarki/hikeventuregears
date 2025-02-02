@@ -74,7 +74,7 @@ const Navbar = () => {
                                 {
                                     user ? (
                                         <div className="dropdown">
-                                            <a className="btn  dropdown-toggle ms-3" style={{ background: '#D29062', color: 'white' }} role="hover" data-bs-toggle="dropdown" aria-expanded="false">
+                                            <a className="btn  dropdown-toggle ms-3" style={{ background: 'white', color: 'black' }} role="hover" data-bs-toggle="dropdown" aria-expanded="false">
                                                 Hello, {user.username}
                                             </a>
                                             <ul className="dropdown-menu">
@@ -82,7 +82,7 @@ const Navbar = () => {
                                                 <li><a className="dropdown-item" href="/orderlist">Orders</a></li>
                                                 <li><a className="dropdown-item" href="/address">Address</a></li>
                                                 <li><a className="dropdown-item" href="/cart">Cart</a></li>
-                                                <li><hr className="dropdown-divider" style={{ background: 'red' }} /></li>
+                                                <li><hr className="dropdown-divider" style={{ background: '#208894' }} /></li>
                                                 <li><Link onClick={handleLogout} className="dropdown-item" to="/login">Logout</Link></li>
                                             </ul>
                                         </div>
