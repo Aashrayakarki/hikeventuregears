@@ -1,206 +1,92 @@
+import { color } from 'framer-motion';
 import React from 'react';
 import { FaFacebook, FaInstagram, FaTwitter } from 'react-icons/fa';
 
 const FooterCard = () => {
     return (
-        <>
-            <div id="footer" className='w-100' style={{ backgroundColor: "#212529" }}>
-                <div className='container text-light bg-dark pb-0' >
-                    <div className='upper-footer  row'>
-                        <div className='need-help col-12 col-md-8 col-lg-4 mb-5'>
-                            <div className='help-box p-3'>
-                                <h5>Need Help?</h5>
-                                <div
-                                    className='underline'
-                                    style={{
-                                        height: "2px",
-                                        width: "30px",
-                                        backgroundColor: "#D29062",
-                                    }}
-                                ></div>
-                                <div className='details mt-5 d-flex align-items-center gap-4'>
-                                    <div className='text m-0 p-0'>
-                                        <p className='text-light'>Got Questions? Call us 24/7!</p>
-                                        <span className=' fw-bold' style={{ color: "#D29062" }}>
-                                            Call Us:{" "}
-                                        </span>
-                                        <span className='fw-bold '> (+977) 9860708090</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className='contact-info mt-5'>
-                                <h5>Contact Info</h5>
-                                <div
-                                    className='underline'
-                                    style={{
-                                        height: "2px",
-                                        width: "30px",
-                                        backgroundColor: "#D29062",
-                                    }}
-                                ></div>
-
-                                <p className='mt-4 text-light'>Email: booze@gmail.com</p>
-                                <p className='text-light'>Location: Kathmandu, Nepal</p>
-                            </div>
-
-                            <div className='social-links d-flex gap-3'>
-                                <a
-                                    href={"/"}
-                                    target='_blank'
-                                    className='link-box d-flex justify-content-center align-items-center p-1 rounded text-light'
-                                    style={{ width: "30px" }}
-                                >
-                                    <FaFacebook size={20} />
-                                </a>
-                                <a
-                                    href={"/"}
-                                    target='_blank'
-                                    className='link-box d-flex justify-content-center align-items-center p-1 rounded text-light'
-                                    style={{ width: "30px" }}
-                                >
-                                    <FaInstagram size={20} />
-                                </a>
-                                <a
-                                    href={"/"}
-                                    target='_blank'
-                                    className='link-box d-flex justify-content-center align-items-center p-1 rounded text-light'
-                                    style={{ width: "30px" }}
-                                >
-                                    <FaTwitter size={20} />
-                                </a>
-                            </div>
+        <div id="footer" className="w-100 py-5 text-light" style={{ backgroundColor: "#1a1a2e" }}>
+            <div className="container">
+                <div className="upper-footer row">
+                    {/* Help Section */}
+                    <div className="col-12 col-md-8 col-lg-4 mb-5">
+                        <div className="p-4 rounded" style={{ backgroundColor: "#16213e" }}>
+                            <h5 className="mb-3">Need Help?</h5>
+                            <div className="underline mb-3" style={{ height: "2px", width: "40px", backgroundColor: "#e94560" }}></div>
+                            <p className="mb-2">Got Questions? Call us 24/7!</p>
+                            <span className="fw-bold text-warning">Call Us: </span>
+                            <span className="fw-bold">(+977) 9860708090</span>
                         </div>
-                        <div className='company-info  col-12 col-md-6 col-lg-2'>
-                            <div className=' p-3'>
-                                <h5>Company</h5>
-                                <div
-                                    className='underline'
-                                    style={{
-                                        height: "2px",
-                                        width: "30px",
-                                        backgroundColor: "#D29062",
-                                    }}
-                                ></div>
-
-                                <ul
-                                    className='mt-5 d-flex flex-column gap-4 ps-0'
-                                    style={{ listStyle: "none" }}
-                                >
-                                    <li>
-                                        <a
-                                            className='text-light'
-                                            style={{ textDecoration: "none" }}
-                                        >
-                                            Careers
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a
-                                            className='text-light'
-                                            style={{ textDecoration: "none" }}
-                                        >
-                                            Terms Of Use
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a
-                                            className='text-light'
-                                            style={{ textDecoration: "none" }}
-                                        >
-                                            Privacy Statement
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a
-                                            className='text-light'
-                                            style={{ textDecoration: "none" }}
-                                        >
-                                            Feedbacks
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
+                        <div className="mt-4">
+                            <h5>Contact Info</h5>
+                            <div className="underline mb-3" style={{ height: "2px", width: "40px", backgroundColor: "#D29062" }}></div>
+                            <p>Email: booze@gmail.com</p>
+                            <p>Location: Kathmandu, Nepal</p>
                         </div>
-                        <div className='support-info col-12 col-md-6 col-lg-2'>
-                            <div className=' p-3'>
-                                <h5>Support</h5>
-                                <div
-                                    className='underline'
-                                    style={{
-                                        height: "2px",
-                                        width: "30px",
-                                        backgroundColor: "#D29062",
-                                    }}
-                                ></div>
-
-                                <ul
-                                    className='mt-5 d-flex flex-column gap-4 ps-0'
-                                    style={{ listStyle: "none" }}
+                        {/* Social Media Links */}
+                        <div className="social-links d-flex gap-3 mt-3">
+                            {["facebook", "instagram", "twitter"].map((platform, index) => (
+                                <a
+                                    key={index}
+                                    href="/"
+                                    target="_blank"
+                                    className="d-flex justify-content-center align-items-center p-2 rounded-circle"
+                                    style={{ width: "40px", height: "40px", backgroundColor: "#e94560", color: "white" }}
                                 >
-                                    <li>
-                                        <a
-                                            className='text-light'
-                                            style={{ textDecoration: "none" }}
-                                        >
-                                            Account
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a
-                                            className='text-light'
-                                            style={{ textDecoration: "none" }}
-                                        >
-                                            Legal
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a
-                                            className='text-light'
-                                            style={{ textDecoration: "none" }}
-                                        >
-                                            Affiliate Program
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a
-                                            className='text-light'
-                                            style={{ textDecoration: "none" }}
-                                        >
-                                            Privacy Policy
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div className='subscription-info col-12 col-md-8 col-lg-4'>
-                            <div className=' p-3'>
-                                <h5>About Us</h5>
-                                <div
-                                    className='underline'
-                                    style={{
-                                        height: "2px",
-                                        width: "30px",
-                                        backgroundColor: "#D29062",
-                                    }}
-                                ></div>
-                                <p className='text-white'>
-                                    booze is  online store in Nepal that offers an extensive selection of genuine liquors . We provide free delivery right at your doorstep within 45 minutes, with distance coverage up to 6km outside Ring Road. Our delivery hours are from 10am to 10pm, and we are open 365 days
-                                </p>
-                            </div>
+                                    {platform === "facebook" && <FaFacebook size={20} />}
+                                    {platform === "instagram" && <FaInstagram size={20} />}
+                                    {platform === "twitter" && <FaTwitter size={20} />}
+                                </a>
+                            ))}
                         </div>
                     </div>
-                </div>
-                <div className=' w-100'>
-                    <div className='copyright-info text-light container bg-dark d-flex flex-column gap-4 align-items-center flex-lg-row justify-content-between pt-0 w-100 text-center'>
-                        <span className='text-center text-light w-100'>
-                            {new Date().toISOString().split("-")[0]} booze &copy; All rights
-                            reserved.
-                        </span>
+
+                    {/* Company Section */}
+                    <div className="col-12 col-md-6 col-lg-2">
+                        <h5 className='h5' style={{color: 'black'}}>Company</h5>
+                        <div className="underline mb-3" style={{ height: "2px", width: "40px", backgroundColor: "#D29062" }}></div>
+                        <ul className="list-unstyled mt-3">
+                            {["Careers", "Terms Of Use", "Privacy Statement", "Feedbacks"].map((item, index) => (
+                                <li key={index}>
+                                    <a className="text-light text-decoration-none">{item}</a>
+                                </li>
+                            ))}
+                        </ul>
+                    </div>
+
+                    {/* Support Section */}
+                    <div className="col-12 col-md-6 col-lg-2">
+                        <h5 className='h5' style={{color: 'black'}}>Support</h5>
+                        <div className="underline mb-3" style={{ height: "2px", width: "40px", backgroundColor: "#D29062" }}></div>
+                        <ul className="list-unstyled mt-3">
+                            {["Account", "Legal", "Affiliate Program", "Privacy Policy"].map((item, index) => (
+                                <li key={index}>
+                                    <a className="text-light text-decoration-none">{item}</a>
+                                </li>
+                            ))}
+                        </ul>
+                    </div>
+
+                    {/* About Us Section */}
+                    <div className="col-12 col-md-8 col-lg-4">
+                        <h5 className='h5' style={{color: 'black'}}>About Us</h5>
+                        <div className="underline mb-3" style={{ height: "2px", width: "40px", backgroundColor: "#D29062" }}></div>
+                        <p className='description' style={{color: 'black'}}>
+                            Booze is an online store in Nepal that offers an extensive selection of genuine liquors.
+                            We provide free delivery right at your doorstep within 45 minutes, covering up to 6km outside Ring Road.
+                            Our delivery hours are from 10 AM to 10 PM, open 365 days.
+                        </p>
                     </div>
                 </div>
             </div>
-        </>
-    )
-}
+
+            {/* Footer Bottom */}
+            <div className="mt-4 text-center">
+                <p className="m-0">
+                    {new Date().getFullYear()} Booze &copy; All rights reserved.
+                </p>
+            </div>
+        </div>
+    );
+};
 
 export default FooterCard;
