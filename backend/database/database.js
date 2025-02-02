@@ -6,5 +6,5 @@ const connectDatabase = () => {
     })
 }
 
-//exportinf the function
+//exporting the function
 module.exports = connectDatabase;
