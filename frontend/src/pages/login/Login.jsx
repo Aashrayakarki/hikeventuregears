@@ -181,10 +181,10 @@ const Login = () => {
                         <div className="login-right">
                             <div className="login-form">
                                 <div className="logo">
-                                    <img src="assets/images/gear_rentals_logo.png" alt="logo" />
+                                    <img src="assets/images/hikeventure_logo.png" alt="logo" />
                                 </div>
-                                <h2>Welcome Back!</h2>
-                                <p>Please enter your details</p>
+                                <h2>Hey!! Welcome</h2>
+                                <p>Please enter your login details</p>
                                 <form>
                                     <label>Email Address</label>
                                     <input
@@ -204,7 +204,7 @@ const Login = () => {
                                     />
                                     {passwordError && <p className="text-danger">{passwordError}</p>}
 
-                                    <ReCAPTCHA
+                                    <ReCAPTCHA className="mt-4"
                                         sitekey="6Lc3iccqAAAAAKDkISSoAVeTn0xCki4mSSoUhtsf"
                                         ref={recaptchaRef}
                                     />
