@@ -34,7 +34,7 @@ const Login = () => {
 
         if (email.trim() === "" || !email.includes("@")) {
             setEmailError("Email address is required");
-            toast.error("Email is required");
+            toast.error("Email address is required");
             isValid = false;
         }
 
