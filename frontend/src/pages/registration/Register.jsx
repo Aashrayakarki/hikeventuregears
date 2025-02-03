@@ -70,7 +70,7 @@ const Register = () => {
             isValid = false;
         }
         if (username.trim() === '') {
-            setuserNameError('Please enter your userName');
+            setuserNameError('Please enter your username');
             isValid = false;
         }
         if (age.trim() === '') {
@@ -93,7 +93,7 @@ const Register = () => {
             isValid = false;
         }
         if (confirmPassword.trim() !== password.trim()) {
-            setConfirmPasswordError('Password does not match');
+            setConfirmPasswordError('Password does not match at all');
             isValid = false;
         }
         return isValid;
