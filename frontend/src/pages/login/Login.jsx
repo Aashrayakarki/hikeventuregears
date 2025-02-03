@@ -242,7 +242,7 @@ const Login = () => {
                 <div className="otp-overlay">
                     <div className="otp-container">
                         <h2>Verify OTP</h2>
-                        <p>A verification code has been sent to your email.</p>
+                        <p>A verification code has been sent to your email address</p>
                         <input
                             type="text"
                             placeholder="Enter OTP"
