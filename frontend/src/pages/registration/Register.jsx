@@ -66,7 +66,7 @@ const Register = () => {
             isValid = false;
         }
         if (email.trim() === '') {
-            setEmailError('Please enter your email');
+            setEmailError('Please enter your email address');
             isValid = false;
         }
         if (username.trim() === '') {
@@ -85,7 +85,7 @@ const Register = () => {
             setPasswordError('Please enter your password');
             isValid = false;
         } else if (!/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&#])[A-Za-z\d@$!%*?&#]{8,}$/.test(password)) {
-            setPasswordError('Password must be at least 8 characters long and should include an uppercase letter, a lowercase letter, a number, and a special character');
+            setPasswordError('Password must be at least 8 characters long and should include an uppercase letter, a lowercase letter, a number and a special character');
             isValid = false;
         }
         if (confirmPassword.trim() === '') {
