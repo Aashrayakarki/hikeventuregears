@@ -200,6 +200,7 @@ const Register = () => {
                 </div>
             </div>
 
+            <FooterCard />
         </>
     );
 };
