@@ -190,6 +190,7 @@ const Register = () => {
                             </div>
                         </div>
 
+                        <ReCAPTCHA sitekey="6Lc3iccqAAAAAKDkISSoAVeTn0xCki4mSSoUhtsf" ref={recaptchaRef} />
 
                         <button onClick={handleSubmit} className="create-account-btn">Create Account</button>
                     </form>
