@@ -183,7 +183,7 @@ const Login = () => {
                                 <div className="logo">
                                     <img src="assets/images/hikeventure_logo.png" alt="logo" />
                                 </div>
-                                <h2>Hey!! Welcome</h2>
+                                <h2>Hey!! Welcome back!!!</h2>
                                 <p>Please enter your login details to continue</p>
                                 <form>
                                     <label>Email Address</label>
